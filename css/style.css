@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "Myriad-Bold", sans-serif;
+  src: url("../fonts/Myriad Pro Bold.ttf");
+}
+@font-face {
+  font-family: "Myriad-Regular", sans-serif;
+  src: url("../fonts/Myriad Pro Regular.ttf");
+}
+@font-face {
+  font-family: "Myriad-SemiBold", sans-serif;
+  src: url("../fonts/Myriad Pro Semibold.ttf");
+}
+@font-face {
+  font-family: "Myriad-It", sans-serif;
+  src: url("../fonts/MyriadPro-It (1).otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Classes */
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+span {
+  color: #ffc600;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* End Global Classes */
+.sayt {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+.sayt-top {
+  height: 50%;
+  background: url("../images/Oyin-yaratish.png") no-repeat center center;
+  background-size: cover;
+}
+.sayt-bottom {
+  height: 50%;
+  background-color: #161616;
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  z-index: 1000;
+  height: 100%;
+}
+#hero .hero {
+  display: flex;
+  flex-direction: column;
+}
+#hero .hero-top {
+  display: flex;
+  flex-direction: column;
+  padding: 110px 30px;
+}
+#hero .hero-top h1 {
+  font-size: 10rem;
+  font-family: "Myriad-Bold", sans-serif;
+  color: #fff;
+}
+#hero .hero-top p {
+  max-width: 370px;
+  width: 100%;
+  margin-left: 0.5rem;
+  line-height: 1.3rem;
+  margin-bottom: 1.7rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Myriad-Regular", sans-serif;
+}
+#hero .hero-top .download {
+  font-family: "Myriad-Regular", sans-serif;
+  font-size: 1rem;
+  margin-left: 0.6rem;
+}
+#hero .hero-bottom {
+  height: 100%;
+  padding: 60px 0px 0px 40px;
+  background: url("../images/Askar.jpg") no-repeat center center;
+  background-size: cover;
+}
+#hero .hero-bottom h2, #hero .hero-bottom h3 {
+  color: #fff;
+  font-family: "Myriad-Bold", sans-serif;
+  font-size: 3.6rem;
+  line-height: 3rem;
+}
+#hero .hero-bottom .ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3.4rem;
+  margin-bottom: 27rem;
+}
+#hero .hero-bottom .ul li {
+  margin-left: 3.2rem;
+}
+#hero .hero-bottom .ul li:first-child {
+  margin-left: 0;
+}
+#hero .hero-bottom .ul li a {
+  font-size: 1rem;
+  font-family: "Myriad-Regular", sans-serif;
+  letter-spacing: 0.3px;
+  transition: 0.3s ease;
+  transition-property: color;
+  cursor: pointer;
+  color: #ffc600;
+}
+#hero .hero-bottom .ul li a:hover {
+  border-bottom: 2px solid #ffc600;
+  padding: 7px 0;
+}
+#hero .hero-bottom .ul li a:hover span {
+  color: #fff;
+}
+
+/* End Hero Section */
+/* About Section */
+#about .about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+}
+#about .about-left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #717171;
+  position: relative;
+  left: 9rem;
+  top: 1rem;
+  padding: 14px 30px 30px 0px;
+}
+#about .about-left h3 {
+  color: #717171;
+  font-size: 2rem;
+  font-family: "Myriad-SemiBold", sans-serif;
+  margin-bottom: -13px;
+  margin-left: 0.4rem;
+}
+#about .about-left h3 .head {
+  margin-right: -10px;
+  font-size: 2.7rem;
+}
+#about .about-left h2 {
+  color: #000000;
+  font-size: 5rem;
+  font-family: "Myriad-SemiBold", sans-serif;
+}
+#about .about-right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+#about .about-right label {
+  max-width: 595px;
+  width: 100%;
+  text-align: left;
+  font-family: "Myriad-It", sans-serif;
+  font-size: 15px;
+  color: #000000;
+  margin-bottom: 1.5rem;
+  margin-top: 1.9rem;
+  letter-spacing: 0.1px;
+  line-height: 1.3rem;
+}
+#about .about-right p {
+  max-width: 575px;
+  width: 100%;
+  text-align: left;
+  font-family: "Myriad-Regular", sans-serif;
+  color: #595959;
+  font-size: 15px;
+  line-height: 1.2rem;
+}
+
+/* End About Section */
+/* Testimonials Section */
+#testimonials .testimonials {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#testimonials .testimonials-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ffc600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8e8e8;
+  margin-bottom: 1rem;
+}
+#testimonials .testimonials-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+#testimonials .testimonials-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#testimonials .testimonials-item h2 {
+  font-family: "Myriad-Regular", sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+#testimonials .testimonials-item p {
+  max-width: 270px;
+  width: 100%;
+  font-size: 11px;
+  font-family: "Myriad-It", sans-serif;
+  color: #000000;
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 0.9rem;
+}
+
+/* End Testimonials Section */
+/* Projects Section */
+#projects .projects {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+#projects .projects-top {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 2.2rem;
+}
+#projects .projects-top h2 {
+  font-size: 1.9rem;
+  color: #000000;
+  font-family: "Myriad-SemiBold", sans-serif;
+  margin-bottom: 1.5rem;
+}
+#projects .projects-top h2 span, #projects .projects-top h2 label {
+  font-size: 2.5rem;
+}
+#projects .projects-top .ul1 {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+#projects .projects-top .ul1 li {
+  margin-left: 1.9rem;
+}
+#projects .projects-top .ul1 li a {
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Myriad-SemiBold", sans-serif;
+  font-size: 11px;
+  padding: 4px 0;
+}
+#projects .projects-top .ul1 li:hover a {
+  border-bottom: 2px solid #ffc600;
+}
+#projects .projects-top .ul1 li:first-child {
+  margin-left: 0;
+}
+#projects .projects-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+#projects .projects-bottom_images {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#projects .projects-bottom-image {
+  width: 300px;
+  height: 270px;
+}
+#projects .projects-bottom-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* End Projects Section */
+/* Media Query for 1199px here */
+@media screen and (max-width: 1199px) {
+  #projects .projects-top {
+    max-width: 600px;
+    width: 100%;
+    margin-left: 3rem;
+  }
+  #projects .projects-bottom_images {
+    margin: 0 auto;
+    justify-content: center;
+  }
+}
+/* End Media Query for 1199px here */
+/* Media Query for 990px here */
+@media screen and (max-width: 991px) {
+  #about .about-left {
+    width: 35%;
+    left: 3rem;
+    border-right: none;
+  }
+  #about .about-right {
+    width: 65%;
+    margin-left: 100px;
+  }
+}
+/* End Media Query for 990px here */
+/* Media Query for 768px here */
+@media screen and (max-width: 768px) {
+  #about .about-left {
+    left: 1rem;
+    top: 0;
+  }
+  #about .about-right {
+    width: 65%;
+    margin-left: 100px;
+  }
+}
+#testimonials .testimonials-item:nth-child(3) {
+  margin-top: 2rem;
+}
+
+/* End Media Query for 768px here */
+/*  Media Query for 576px here */
+@media screen and (max-width: 576px) {
+  #hero .hero-top h1 {
+    font-size: 8rem;
+  }
+
+  #about .about {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  #about .about-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 90px;
+    left: 0;
+    width: 100%;
+    text-align: left;
+  }
+  #about .about-right label {
+    margin-top: 0;
+  }
+}
+/* End Media Query for 576px here */
+/*  Media Query for 480px here */
+@media screen and (max-width: 479px) {
+  #hero .hero-top h1 {
+    font-size: 5rem;
+  }
+  #hero .hero-top p {
+    font-size: 0.8rem;
+  }
+  #hero .hero-top .download {
+    font-size: 0.8rem;
+  }
+  #hero .hero-bottom h2, #hero .hero-bottom h3 {
+    font-size: 3rem;
+  }
+
+  #testimonials .testimonials-item:first-child {
+    margin-bottom: 2rem;
+  }
+
+  #projects .projects-top {
+    margin: 20px auto;
+    width: 90%;
+  }
+  #projects .projects-top h2 {
+    text-align: center;
+  }
+}
+/* End Media Query for 480px here */
+/* Media Query for 320px here */
+@media screen and (max-width: 320px) {
+  #hero .hero-top h1 {
+    font-size: 4rem;
+  }
+  #hero .hero-top p {
+    font-size: 0.7rem;
+  }
+  #hero .hero-top .download {
+    font-size: 0.7rem;
+  }
+  #hero .hero-bottom {
+    height: 350px;
+  }
+  #hero .hero-bottom h2, #hero .hero-bottom h3 {
+    font-size: 2.5rem;
+  }
+  #hero .hero-bottom .ul {
+    width: 100%;
+    margin-left: -1.7rem;
+  }
+  #hero .hero-bottom .ul li {
+    margin-left: 1rem;
+  }
+
+  #about .about-left {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  #about .about-left h3 {
+    margin: 0 auto;
+    font-size: 2rem;
+  }
+  #about .about-left h2 {
+    margin: 0 auto;
+    font-size: 3.5rem;
+  }
+  #about .about-right {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 15px;
+  }
+  #about .about-right label {
+    font-size: 13px;
+  }
+  #about .about-right p {
+    font-size: 13px;
+  }
+
+  #projects .projects-top {
+    width: 100%;
+    margin: 20px auto;
+  }
+  #projects .projects-top h2 {
+    text-align: center;
+  }
+  #projects .projects-top .ul1 {
+    margin: 0 auto;
+  }
+  #projects .projects-top .ul1 li {
+    margin-left: 1rem;
+  }
+  #projects .projects-top .ul1 li a {
+    font-size: 8px;
+  }
+}
+/* End Media Query for 320px here *//*# sourceMappingURL=style.css.map */
